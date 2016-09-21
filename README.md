@@ -3,16 +3,24 @@ Tribune DataViz Bookmarklets
 
 Bookmarklets that might be useful to members of the Chicago Tribune DataViz team.
 
-To install bookmarklets, just drag and drop the links labeled "Bookmarklet" to your browser's toolbar.
+Installation
+------------
+
+Create a new bookmark in your Browser.  In Chrome, on Mac OS X, I go to Bookmarks > Bookmark Manager.  Then I right click on "Bookmarks Bar" and choose "Add Page" from the contextual menu.
+
+In the bookmark name field, type a string that will be shown for the "button" that you click to use your bookmarklet. This can be anything, but should describe what the bookmarklet does.  For the link, copy and paste the snippet for one of the bookmarklets shown below. 
+
 
 Copy a markdown link to an Unfuddle ticket
 ------------------------------------------
 
 If you have an Unfuddle ticket open in your browser window, click this bookmarklet to copy a Markdown-formatted link to the ticket to your clipboard.  I use this to reference tickets in my personal developer notes.
 
-Bookmarklet: <a href='javascript:!function(document,window){var issueNumber=document.querySelector(".summary .number").textContent.trim(),title=document.querySelector(".summary .text-field-text").textContent.trim(),linkText=issueNumber+" "+title,url=document.location.href,markdown="["+linkText+"]("+url+")",dummy=document.createElement("div"),textContent=document.createTextNode(markdown),range=document.createRange();dummy.appendChild(textContent),document.body.appendChild(dummy),range.selectNode(textContent),window.getSelection().addRange(range),document.execCommand("copy"),window.getSelection().removeAllRanges(),document.body.removeChild(dummy)}(document,window);'>Markdown link for ticket</a>
+### Bookmarklet
 
-TODO: Automatically generate bookmarklet links above.
+    javascript:!function(document,window){var issueNumber=document.querySelector(".summary .number").textContent.trim(),title=document.querySelector(".summary .text-field-text").textContent.trim(),linkText=issueNumber+" "+title,url=document.location.href,markdown="["+linkText+"]("+url+")",dummy=document.createElement("div"),textContent=document.createTextNode(markdown),range=document.createRange();dummy.appendChild(textContent),document.body.appendChild(dummy),range.selectNode(textContent),window.getSelection().addRange(range),document.execCommand("copy"),window.getSelection().removeAllRanges(),document.body.removeChild(dummy)}(document,window);
+
+TODO: Automatically load snippet from source files above 
 
 Building the bookmarklets
 -------------------------
