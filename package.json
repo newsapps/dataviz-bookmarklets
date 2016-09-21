@@ -1,0 +1,21 @@
+{
+  "name": "dataviz-bookmarklets",
+  "version": "0.0.1",
+  "description": "Bookmarklets for the Chicago Tribune DataViz team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && uglifyjs --compress -- src/unfuddle-markdown.js > dist/unfuddle-markdown.min.js"
+  },
+  "keywords": [
+    "bookmarklet",
+    "dataviz",
+    "Chicago",
+    "Tribune"
+  ],
+  "author": "Geoff Hing <geoffhing@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^2.7.3"
+  }
+}
