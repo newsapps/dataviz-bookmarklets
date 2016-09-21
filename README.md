@@ -3,6 +3,8 @@ Tribune DataViz Bookmarklets
 
 Bookmarklets that might be useful to members of the Chicago Tribune DataViz team.
 
+To install bookmarklets, just drag and drop the links labeled "Bookmarklet" to your browser's toolbar.
+
 Copy a markdown link to an Unfuddle ticket
 ------------------------------------------
 
